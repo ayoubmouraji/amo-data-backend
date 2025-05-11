@@ -9,6 +9,7 @@ app.use(express.json());
 
 app.post('/send-email', async (req, res) => {
   const { name, email, message } = req.body;
+  console.log("Données reçues :", req.body);
 
   // Configuration du transporteur SMTP
  // const transporter = nodemailer.createTransport({
